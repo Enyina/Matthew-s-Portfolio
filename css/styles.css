@@ -1,0 +1,277 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--primary-color);
+  color: rgb(74, 94, 94);
+  padding: 0px 6px;
+}
+.about-content {
+  width: 75%;
+  margin: 8%;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+}
+#ab-h1 {
+  margin-top: 4%;
+}
+.about-content p {
+  margin: 5%;
+}
+.d-none {
+  display: none;
+}
+
+:root {
+  --primary-color: whitesmoke;
+  --secondary-color: rgb(74, 94, 94);
+}
+.dark-mode {
+  --primary-color: #000106;
+  --secondary-color: rgb(201, 236, 236);
+}
+.nav {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  padding: 1% 1.5%;
+}
+.left {
+  flex: 1;
+}
+#logo {
+  font-family: "Comforter Brush", cursive;
+}
+a {
+  text-decoration: none;
+  color: rgb(74, 94, 94);
+}
+
+#right {
+  flex: 1;
+}
+#right ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin-right: 16%;
+}
+#right ul li {
+  margin-right: 5%;
+}
+#drop-menu {
+  display: none;
+}
+#menu {
+  width: 90px;
+  height: auto;
+  padding: 2px;
+  font-size: 16px;
+}
+#menu-cont {
+  /* display: none; */
+  position: absolute;
+  min-width: 90px;
+  box-shadow: 0 6px 14px 0 rgb(74, 94, 94);
+  z-index: 1;
+}
+#menu-cont ul {
+  list-style: none;
+}
+#menu-cont ul li {
+  margin: 30%;
+}
+#moon {
+  width: 30px;
+  justify-content: flex-end;
+  margin-left: 1%;
+}
+.body-container {
+  text-align: center;
+}
+#my-pic {
+  margin-top: 5%;
+  width: 20%;
+  border-radius: 50%;
+  filter: drop-shadow(0px 4px 3px rgb(74, 94, 94));
+}
+#my-pic:hover {
+  animation: spin 10s linear infinite;
+  box-shadow: inset 0 0 9px #fff, inset 3px 0 9px var(--secondary-color),
+    inset -3px 0 9px #0ff, inset 3px 0 15px violet, inset -3px 0 15px #0ff,
+    0 0 9px #fff, -2px 0 9px rgb(201, 236, 236), 2px 0 9px rgb(232, 252, 252);
+}
+#hello {
+  font-size: 130%;
+  margin-top: 2%;
+  display: block;
+  animation: slide-right 3s ease-in-out;
+}
+#name {
+  font-size: 350%;
+  margin-top: 3%;
+}
+#track {
+  font-size: 140%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+#name,
+#track {
+  opacity: 1;
+  animation-name: fadeIn;
+  -webkit-animation-name: fadeIn;
+  animation-duration: 3s;
+  -webkit-animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
+  visibility: visible !important;
+}
+.stack {
+  margin: auto;
+  border: rgb(118, 118, 151) solid thin;
+  border-radius: 10px;
+  padding: 30px;
+  width: 50%;
+  animation: slide-down 3s ease-in-out;
+}
+.stack h2 {
+  margin-bottom: 8%;
+}
+.stack .stack-arr {
+  width: 90%;
+  /* display: flex; */
+  justify-content: center;
+  /* align-items: center; */
+  margin: auto;
+}
+.stack p {
+  margin-right: 10px;
+  padding: 5px;
+}
+.stack img {
+  width: 10%;
+}
+.back {
+  position: absolute;
+  top: 27%;
+  right: 17%;
+  z-index: -1;
+  opacity: 0.2;
+  width: 65%;
+  border-radius: 50px;
+}
+.button {
+  width: 79%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.move-button {
+  margin-top: 15%;
+  margin-bottom: 15%;
+  width: 130px;
+  padding: 9px;
+}
+#contactMe ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 5px;
+}
+.reM {
+  width: 40px;
+  height: 30px;
+}
+.reM2 {
+  width: 30px;
+  height: 30px;
+}
+#project {
+  position: absolute;
+  right: 0%;
+}
+#pro-pic {
+  width: 80%;
+  padding: 9%;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@keyframes slide-right {
+  from {
+    margin-right: 100%;
+  }
+  to {
+    margin-right: 0;
+  }
+}
+@keyframes slide-down {
+  from {
+    margin-top: 100%;
+  }
+  to {
+    margin-top: 0;
+  }
+}
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes fadeIn {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.1);
+  }
+  80% {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    -webkit-transform: scale(0);
+    opacity: 0;
+  }
+  60% {
+    -webkit-transform: scale(1.1);
+  }
+  80% {
+    -webkit-transform: scale(0.9);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .right {
+    display: none;
+  }
+  #drop-menu {
+    display: block;
+  }
+  #drop-menu:hover .menu-cont {
+    display: block;
+  }
+}
